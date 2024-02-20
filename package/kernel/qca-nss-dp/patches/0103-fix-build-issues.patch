@@ -1,0 +1,12 @@
+--- a/nss_dp_main.c
++++ b/nss_dp_main.c
+@@ -34,6 +34,9 @@
+ #if defined(NSS_DP_MAC_POLL_SUPPORT)
+ #include <init/ssdk_init.h>
+ #endif
++#ifdef NSS_DP_IPQ50XX
++#include <linux/if_vlan.h>
++#endif
+ 
+ #include "nss_dp_hal.h"
+ 

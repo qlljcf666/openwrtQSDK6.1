@@ -1,0 +1,14 @@
+--- a/config
++++ b/config
+@@ -456,6 +456,11 @@ ifeq (MP, $(CHIP_TYPE))
+ 		IN_POLICER=FALSE
+ 	endif
+ 	IN_CTRLPKT=TRUE
++	IN_MISC=TRUE
++	IN_VSI=TRUE
++	IN_STP=TRUE
++	IN_FDB=TRUE
++	IN_QCA808X_PHY=TRUE
+ endif
+ 
+ ifneq (, $(filter MPPE APPE , $(CHIP_TYPE)))
